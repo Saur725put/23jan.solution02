@@ -1,0 +1,4 @@
+Q2
+If an exception is not caught in a C++ program, the program will terminate. 
+The C++ runtime will call the terminate() function, which by default will call the abort() function and the program will be terminated immediately. 
+Before the program terminates, the stack will be unwound, meaning that the destructors of all objects that were created in the stack frame where the exception was thrown will be called.
